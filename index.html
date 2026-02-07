@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Color changer</title>
+    <style>
+      body{
+        text-align: center;
+        margin-top: 90px;
+        font-family: Georgia;
+        transition: 0.9s;
+      }
+      h1{
+        color: blue;
+      }
+      button{
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+      <h1>Color changer</h1>
+      <button onclick="changecolor();">change color</button>
+      <script>
+        function changecolor()
+        {
+          let color=["pink","lightblue","grey"]
+        let random=Math.floor(Math.random()*color.length)
+        document.body.style.background=color[random] 
+        }
+      </script>
+  </body>
+</html>
+
